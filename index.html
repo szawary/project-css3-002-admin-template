@@ -12,79 +12,80 @@
 <body>
     <header class="header--dark">
         <h3 class="header__title">Admin Page</h3>
-
+        <div class="header__search">
+            <form action="">
+                <label for="search"></label>
+                <input class="search__input" type="text" id="search" value="Search for...">
+                <button class="search__btn" type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
     </header>
 
     <main>
         <aside>
-            <nav class="nav">
-                <h4>CORE</h4>
-                <ul>
+            <nav class="main__nav">
+                <ul class="nav__ul">
                     <li>
-                        <section class="menuicon">
-                            <i class="fa fa-tachometer"></i>
-                        </section>
-                        <section><a href="#">Dashboard</a></section>
+                        <header>CORE</header>
                     </li>
+                    <li><a href="#"><i class="fa fa-tachometer"></i>Dashboard</a></li>
+                    <li>
+                        <header>INTERFACE</header>
+                    </li>
+                    <li><a href="#"><i class="fa fa-windows"></i>Layouts</a></li>
+                    <li><a href="#"><i class="fa fa-bookmark"></i>Pages</a></li>
+                    <li>
+                        <header>ADDONS</header>
+                    </li>
+                    <li><a href="#"><i class="fa fa-area-chart"></i>Charts</a></li>
+                    <li><a href="#"><i class="fa fa-table"></i>Tables</a></li>
                 </ul>
             </nav>
         </aside>
-        <section>
+
+        <section class="content">
             <header>
-                <h3>Dashboard</h3>
+                <h1>Dashboard</h1>
             </header>
-            <article class="breadcrumb">
-                <h4>Dashboard</h4>
-            </article>
+            <div class="main__breadcrumb">
+                <h3>Dashboard</h4>
+            </div>
+            <div class="main__cards">
+                <div class="main__card main__card--blue">
+                    <div class="card__top">
+                        <p>Primary Card</p>
+                    </div>
+                    <div class="card__bottom">
+                        <p>View Detalis</p>
+                    </div>
+                </div>
+                <div class="main__card main__card--yellow">
+                    <div class="card__top">
+                        <p>Warning Card</p>
+                    </div>
+                    <div class="card__bottom">
+                        <p>View Detalis</p>
+                    </div>
+                </div>
+                <div class="main__card main__card--green">
+                    <div class="card__top">
+                        <p>Success Card</p>
+                    </div>
+                    <div class="card__bottom">
+                        <p>View Detalis</p>
+                    </div>
+                </div>
+                <div class="main__card main__card--red">
+                    <div class="card__top">
+                        <p>Danger Card</p>
+                    </div>
+                    <div class="card__bottom">
+                        <p>View Detalis</p>
+                    </div>
+                </div>
 
-            <section class="primarycard">
-                <section class="cardtop">
-                    <p>Primary Card</p>
-                </section>
-                <section class="cardbottom">
-                    <section>View Details</section>
-                    <aside class="cardaside">
-                        <p>></p>
-                    </aside>
-                </section>
-            </section>
 
-            <section class="warningcard">
-                <section class="cardtop">
-                    <p>Warning Card</p>
-                </section>
-                <section class="cardbottom">
-                    <section>View Details</section>
-                    <aside class="cardaside">
-                        <p>></p>
-                    </aside>
-                </section>
-            </section>
-
-            <section class="successcard">
-                <section class="cardtop">
-                    <p>Success Card</p>
-                </section>
-                <section class="cardbottom">
-                    <section>View Details</section>
-                    <aside class="cardaside">
-                        <p>></p>
-                    </aside>
-                </section>
-            </section>
-
-            <section class="dangercard">
-                <section class="cardtop">
-                    <p>Danger Card</p>
-                </section>
-                <section class="cardbottom">
-                    <section>View Details</section>
-                    <aside class="cardaside">
-                        <p>></p>
-                    </aside>
-                </section>
-            </section>
-
+            </div>
         </section>
     </main>
     <footer>
