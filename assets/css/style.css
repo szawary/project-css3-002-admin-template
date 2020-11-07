@@ -1,3 +1,8 @@
+header {
+    display: block;
+    padding: 1%;
+}
+
 .header--dark {
     background-color: rgb(51,57,64);
     color: rgb(236,236,266);
@@ -10,8 +15,6 @@
 
 .header__search {
     display: inline;
-    position: fixed;
-    right: 2%;
 }
 
 .search__input {
@@ -23,6 +26,16 @@
 
 .search__btn {
     background-color: rgb(1,123,255);
+}
+
+aside {
+    float: left;
+    width: 25%;
+}
+
+content {
+    float: left;
+    width: 75%;
 }
 
 .main__nav {
@@ -40,15 +53,41 @@ a, a:link, a:visited, a:hover, a:active {
     background-color: rgb(233,236,239);
     border-radius: .25rem;
     padding: 1rem 1.5rem;
+    margin: 1rem 0;
+}
+
+.main__cards {
+    color: rgb(236,236,266); 
+    display: flex;
+    flex: auto auto auto;
+    flex-direction: row;
+    flex-flow: wrap;
+    margin: 0 auto;
+    position: relative;
+    max-width: 1000px;
+}
+
+.main__card {
+    display: flex;
+    flex: auto auto auto;
+    max-width: 100%;
+    padding: 1rem;
+    margin-right: 1rem;
+    position: relative;
 }
 
 .card__top {
     border-top-left-radius: .25rem;
     border-top-right-radius: .25rem;
     transition-duration: .3s;
+    padding: 1rem;
+    margin: 1rem;
+    
 }
-
 .card__bottom {
+    padding: 1rem;
+    margin: 1rem;
+    position: relative;
     border-bottom-right-radius: .25rem;
     border-bottom-left-radius: .25rem;
     transition-duration: .3s;
