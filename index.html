@@ -10,18 +10,20 @@
 </head>
 
 <body>
-    <header class="header--dark">
-        <h3 class="header__title">Admin Page</h3>
-        <div class="header__search">
+    <header class="topheader, header--dark">
+        <div style="flex-grow:2" class="topheadertitle">
+            <h3 class="header__title">Admin Page</h3>
+        </div>
+        <div style="flex-grow: 10" class="header__search">
             <form action="">
                 <label for="search"></label>
-                <input class="search__input" type="text" id="search" value="Search for...">
+                <input class="search__input" type="text" id="search" placeholder="Search for...">
                 <button class="search__btn" type="submit"><i class="fa fa-search"></i></button>
             </form>
         </div>
     </header>
 
-    <main>
+    <main class="main">
         <aside class="aside">
             <nav class="main__nav">
                 <ul class="nav__ul">
@@ -44,14 +46,14 @@
         </aside>
 
         <section class="content">
-            <header>
+            <header class="content__header">
                 <h1>Dashboard</h1>
             </header>
             <div class="main__breadcrumb">
                 <h3>Dashboard</h4>
             </div>
             <div class="main__cards">
-                <div class="main__card, main__card--blue">
+                <div class="main__card main__card--blue">
                     <div class="card__top">
                         <p>Primary Card</p>
                     </div>
@@ -59,7 +61,7 @@
                         <p>View Detalis</p>
                     </div>
                 </div>
-                <div class="main__card, main__card--yellow">
+                <div class="main__card main__card--yellow">
                     <div class="card__top">
                         <p>Warning Card</p>
                     </div>
@@ -67,7 +69,7 @@
                         <p>View Detalis</p>
                     </div>
                 </div>
-                <div class="main__card, main__card--green">
+                <div class="main__card main__card--green">
                     <div class="card__top">
                         <p>Success Card</p>
                     </div>
@@ -75,7 +77,7 @@
                         <p>View Detalis</p>
                     </div>
                 </div>
-                <div class="main__card, main__card--red">
+                <div class="main__card main__card--red">
                     <div class="card__top">
                         <p>Danger Card</p>
                     </div>
@@ -83,13 +85,11 @@
                         <p>View Detalis</p>
                     </div>
                 </div>
-
-
             </div>
         </section>
     </main>
     <footer>
-        <p>Copy Right :-)</p>
+        <p>Copy Right texts.</p>
     </footer>
 </body>
 
